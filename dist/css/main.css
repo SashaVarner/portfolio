@@ -125,7 +125,7 @@ img {
       border-color: #9c27b0; }
 
 #header-home {
-  background: url("/dist/img/ocean-5044674.jpg") no-repeat center right/cover;
+  background: url("/img/ocean-5044674.jpg") no-repeat center right/cover;
   height: 100vh;
   color: #fff; }
   #header-home .header-content {
