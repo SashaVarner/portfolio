@@ -1,6 +1,7 @@
 .container {
   max-width: 1280px;
   padding: 1.5rem;
+  padding-top: 0rem;
   margin: auto;
   overflow: hidden; }
 
@@ -27,6 +28,22 @@ button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
   background-color: #9c27b0; }
+
+.bg-main {
+  background: #9c27b0;
+  color: #fff; }
+
+.bg-main {
+  background: #333;
+  color: #fff; }
+
+.bg-main {
+  background: #f4f4f4;
+  color: #000; }
+
+.bg-main {
+  background: #ccc;
+  color: #000; }
 
 .lead {
   font-size: 1.3rem;
@@ -108,7 +125,7 @@ img {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  padding-top: 1rem; }
+  padding-top: .6rem; }
   #main-nav ul {
     display: flex; }
   #main-nav li {
@@ -137,6 +154,11 @@ img {
       line-height: 1.2; }
     #header-home .header-content i {
       padding-top: 2rem; }
+
+#header-inner {
+  background: url("/img/ocean-5044674.jpg") no-repeat 30% 55%/cover;
+  height: 5.5rem;
+  border-bottom: 3px solid #9c27b0; }
 
 #home-a .specials {
   margin-top: 3rem;
@@ -184,7 +206,7 @@ img {
   #home-c .process-icon {
     border-radius: 50%;
     background: #333;
-    color: white;
+    color: #fff;
     padding: 2rem;
     width: 70px;
     height: 70px;
@@ -194,21 +216,93 @@ img {
     transition: all 1s; }
     #home-c .process-icon:hover {
       background: #9c27b0;
+      color: #fff;
       width: 90px;
       height: 90px;
       line-height: 90px; }
       #home-c .process-icon:hover .process-step {
-        background: #333; }
+        background: #333;
+        color: #fff; }
+
+#about-a .about-info {
+  display: grid;
+  align-items: center;
+  grid-template-areas: 'bioimage bio bio' 'aw1 aw2 aw3';
+  grid-gap: 1.2rem; }
+
+#about-a .bio-image {
+  grid-area: bioimage; }
+
+#about-a .bio {
+  grid-area: bio;
+  border-left: 3px solid #9c27b0;
+  padding: 0.8rem; }
+
+#about-a .award-1 {
+  grid-area: aw1; }
+
+#about-a .award-2 {
+  grid-area: aw2; }
+
+#about-a .award-3 {
+  grid-area: aw3; }
+
+#about-a .award-1 .fas,
+#about-a .award-2 .fas,
+#about-a .award-3 .fas {
+  color: #9c27b0;
+  margin: 1rem; }
+
+#about-b .progress {
+  overflow: hidden;
+  height: 20px;
+  background: #ccc;
+  border-radius: 5px;
+  margin-bottom: 0.6rem; }
+  #about-b .progress div {
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    background: #9c27b0; }
+
+#about-c .about-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem; }
+  #about-c .about-logos img {
+    width: 70%; }
+
+#about-d .testimonials {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.5rem; }
+  #about-d .testimonials ul {
+    list-style: none;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center; }
+  #about-d .testimonials p {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5rem; }
+  #about-d .testimonials img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 0.5rem; }
 
 #main-footer {
   background: #333;
   color: white;
-  height: 5rem; }
+  height: 3.5rem; }
+  #main-footer i {
+    width: 20px; }
   #main-footer .footer-content {
     display: flex;
     justify-content: space-between;
     height: 3rem;
-    align-items: center; }
+    align-items: center;
+    padding-top: 0.2rem; }
   #main-footer a {
     color: white;
     margin-right: 1rem;
@@ -219,6 +313,6 @@ img {
     width: 20px;
     line-height: 20px;
     text-align: center;
-    padding: .5rem; }
+    padding: 0.5rem; }
     #main-footer a:hover {
       background: #9c27b0; }
