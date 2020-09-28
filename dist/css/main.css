@@ -216,7 +216,7 @@ img {
       border-color: #9c27b0; }
 
 #header-home {
-  background: url("/img/ocean-5044674.jpg") no-repeat center right/cover;
+  background: url("/dist/img/ocean-5044674.jpg") no-repeat center right/cover;
   height: 100vh;
   color: #fff; }
   #header-home .header-content {
@@ -229,7 +229,7 @@ img {
       padding-top: 2rem; }
 
 #header-inner {
-  background: url("/img/ocean-5044674.jpg") no-repeat 30% 55%/cover;
+  background: url("/dist/img/ocean-5044674.jpg") no-repeat 30% 55%/cover;
   height: 5.5rem;
   border-bottom: 3px solid #9c27b0; }
 
@@ -347,7 +347,7 @@ img {
 
 #about-d .testimonials {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: auto auto auto auto;
   grid-gap: 0.5rem; }
   #about-d .testimonials ul {
     list-style: none;
